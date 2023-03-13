@@ -12,9 +12,9 @@ dockerpath=$DOCKERUSER/$TAG
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login
-docker --tag udacity-mlops-project $dockerpath:latest
+docker login --username=$DOCKERUSER
+docker --tag udacity-mlops-project $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath:latest
+docker push $dockerpath

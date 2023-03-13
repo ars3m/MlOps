@@ -1,1 +1,29 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) voclabs:~/environment/MlOps (main) $ minikube start
+😄  minikube v1.29.0 on Amazon 2
+✨  Using the docker driver based on existing profile
+👍  Starting control plane node minikube in cluster minikube
+🚜  Pulling base image ...
+🔄  Restarting existing docker container for "minikube" ...
+🐳  Preparing Kubernetes v1.26.1 on Docker 20.10.23 ...
+🔗  Configuring bridge CNI (Container Networking Interface) ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: default-storageclass, storage-provisioner
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+(.devops) voclabs:~/environment/MlOps (main) $ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "udacity-mlops-project" already exists
+NAME                    READY   STATUS    RESTARTS        AGE
+udacity-mlops-project   1/1     Running   1 (7m26s ago)   11m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+voclabs:~/environment/MlOps (main) $ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

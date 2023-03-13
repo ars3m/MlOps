@@ -15,7 +15,7 @@ dockerpath=$DOCKERUSER/$TAG
 # Run the Docker Hub container with kubernetes
 kubectl run $TAG\
 	--image=$dockerpath\
-	--port=DOCKER_PORT --labels app=$TAG
+	--port=$DOCKER_PORT --labels app=$TAG
 
 # Step 3:
 # List kubernetes pods

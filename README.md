@@ -24,18 +24,18 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ---
 ### Short description of folders and files in the repo
 
-* [.circleci](/MlOps/.circleci): For the CircleCI build server
-* [model_data](/MlOps/model_data) : this folder contains the pretrained `sklearn` model and housing csv files
-* [output_txt_files](/MlOps/output_txt_files): folder contains sample output logs from running `./run_docker.sh` and `./run_kubernetes.sh`
-* [app.py](/MlOps/app.py) : contains the flask app
-* [Dockerfile](/MlOps/app.py): contains instructions to containerize the application
-* [Makefile](/MlOps/Makefile) : contains instructions for environment setup and lint tests
-* [requirements.txt](/MlOps/requirements.txt): list of required dependencies
-* [run_docker.sh](/MlOps/run_docker.sh): bash script to build Docker image and run the application in a Docker container
-* [upload_docker.sh](/MlOps/upload_docker.sh): bash script to upload the built Docker image to Dockerhub
-* [run_kubernetes.sh](/MlOps/run_kubernetes.sh): bash script to run the application in a Kubernetes cluster
-* [make_prediction.sh](/MlOps/make_prediction.sh): bash script to make predictions against the Docker container and k8s cluster
-* [README.md](/MlOps/README.md): this README file
+* [.circleci](/.circleci): For the CircleCI build server
+* [model_data](/model_data) : this folder contains the pretrained `sklearn` model and housing csv files
+* [output_txt_files](/output_txt_files): folder contains sample output logs from running `./run_docker.sh` and `./run_kubernetes.sh`
+* [app.py](/app.py) : contains the flask app
+* [Dockerfile](/app.py): contains instructions to containerize the application
+* [Makefile](/Makefile) : contains instructions for environment setup and lint tests
+* [requirements.txt](/requirements.txt): list of required dependencies
+* [run_docker.sh](/run_docker.sh): bash script to build Docker image and run the application in a Docker container
+* [upload_docker.sh](/upload_docker.sh): bash script to upload the built Docker image to Dockerhub
+* [run_kubernetes.sh](/run_kubernetes.sh): bash script to run the application in a Kubernetes cluster
+* [make_prediction.sh](/make_prediction.sh): bash script to make predictions against the Docker container and k8s cluster
+* [README.md](/README.md): this README file
 
 
 
